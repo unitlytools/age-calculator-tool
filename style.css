@@ -1,0 +1,99 @@
+/* ==================== TOOL WRAPPER ==================== */
+.my-age-tool {
+  max-width: 820px;
+  margin: 20px auto;
+  padding: 16px;
+  font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+}
+
+/* Card wrapper */
+.my-age-tool .card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(16,24,40,.08);
+}
+
+/* Title and lead text */
+.my-age-tool h1 {
+  text-align: center;
+  font-size: 22px;
+  margin: 6px 0 14px;
+  color: #111827;
+}
+.my-age-tool p.lead {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+/* Row layout */
+.my-age-tool .row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+}
+.my-age-tool .row label {
+  min-width: 100px;
+  color: #6b7280;
+}
+
+/* Input field */
+.my-age-tool input[type=date] {
+  flex: 1 1 auto;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e6eef8;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.my-age-tool .btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(145deg, #2563eb, #4f46e5);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: all .22s;
+}
+.my-age-tool .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(37,99,235,0.28);
+}
+
+/* Clear button style */
+.my-age-tool .clear-btn {
+  background: linear-gradient(145deg,#ef4444,#f87171);
+}
+
+/* Result box */
+.my-age-tool .res {
+  margin-top: 14px;
+  padding: 12px;
+  background: #fbfdff;
+  border-radius: 12px;
+  color: #0f172a;
+  font-weight: 600;
+  line-height: 1.5;
+  min-height: 60px;
+}
+
+/* Responsive */
+@media (max-width:720px) {
+  .my-age-tool .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .my-age-tool input[type=date],
+  .my-age-tool .btn {
+    width: 100%;
+  }
+}
