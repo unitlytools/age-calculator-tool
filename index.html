@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Age Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="my-age-tool">
+  <div class="card">
+    <h1>Age Calculator</h1>
+    <p class="lead">Find your exact age in Years, Months, and Days + Next Birthday Countdown 🎂</p>
+
+    <div class="row">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" />
+    </div>
+
+    <div class="row" style="margin-top:8px;">
+      <button class="btn calc-btn" onclick="calcAge()">Calculate</button>
+      <button class="btn clear-btn" onclick="clearAll()">Clear</button>
+    </div>
+
+    <div id="out" class="res">Ready.</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
